@@ -15,10 +15,10 @@ body {
 .imgfromleft {
     display: inline-block;
     border-radius: 50%;
-    vertical-align: middle;
+    vertical-align: auto;
 }
 
 .textfromleft {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align:auto;
 }
