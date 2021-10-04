@@ -13,12 +13,15 @@ body {
 }
 
 .imgfromleft {
-    display: inline-block;
+    display: inline;
     border-radius: 50%;
-    vertical-align: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-bottom: 2%;
+    margin-right: 3%;
 }
 
 .textfromleft {
-    display: inline-block;
+    display: inline;
     vertical-align:auto;
 }
