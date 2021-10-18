@@ -20,7 +20,8 @@ h1 {
     margin-bottom: 3%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-    text-transform: uppercase
+    text-transform: uppercase;
+    line-height: 30px;
 }
 
 section {
@@ -30,6 +31,9 @@ section {
 
 section p {
     font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-indent: 1px;
 }
 
 section h2 {
