@@ -1,24 +1,150 @@
+* {
+    margin: 0;
+}
+
+/* main h2 {
+    position: absolute;
+} */
+
+header a { 
+    text-decoration: none;
+    color:rgb(90, 86, 86);
+}
+
+header a:hover { 
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.casetext {
-    display: block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@media screen and (max-height: 600px) {
+    
+    body {
+        background-color: bisque;
+    }
+
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    /* .prop { 
+        display: grid;
+        height: 100px;
+    } */
 }
 
-.caseimg {
-    display: block;
+.tbl {
+    border-collapse: collapse;
+    width: 1000px;
+    background-color: aquamarine;
+    margin-top: 75px;
+}
+
+.tbl TH, TD {
+    border: 1px solid maroon;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 30px;
+    justify-content: center;
+}
+
+section {
+    margin-left: 3%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-indent: 1px;
+}
+
+section h2 {
+    font-size: 175%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: lighter;
+}
+
+footer {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.caseimg {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.casetext {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.abouth {
+    display: flex;
+    margin-left: 3%;
+}
+
+
+
 .imgfromleft {
-    display: inline-block;
-    border-radius: 50%;
-    vertical-align: auto;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 .textfromleft {
-    display: inline-block;
-    vertical-align:auto;
+    align-self: center;
+    align-items: flex-start;
+    margin-left: 5px;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headerLi {
+    width: 100%;
+    margin-bottom: 3%;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    outline-color: red;
+}
+
+.headerLi a {
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+}
+
+footer {
+    display: flex;
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper div {
+    background-color: aqua;
+    padding: 25px;
+    outline: 3px solid #000;
+    border: 5px solid #fff;
 }
