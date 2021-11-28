@@ -19,22 +19,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 900px) {
-    
-    body {
-        background-color: bisque;
-    }
-
-    footer {
-        display: none;
-        visibility: hidden;
-    }
-    /* .prop { 
-        display: grid;
-        height: 100px;
-    } */
-}
-
 .tbl {
     border-collapse: collapse;
     width: 1000px;
@@ -47,12 +31,14 @@ body {
 }
 
 h1 {
+    display: flex;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
     line-height: 30px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 section, footer {
@@ -129,9 +115,15 @@ footer {
     margin-right: 1%;
     /* justify-content: space-between; */
     /* flex-direction: row; */
-    padding: 10px 0;
+    padding: 5px 0;
     outline-color: red;
+    position: fixed;
+    /* margin-bottom: 500px; */
 }
+
+/* h1 {
+    margin-top: 50px;
+} */
 
 .headerLi a {
     width: 50%;
@@ -172,4 +164,25 @@ footer {
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    
+    body {
+        background-color: bisque;
+    }
+
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    /* .prop { 
+        display: grid;
+        height: 100px;
+    } */
+
+    .images_collection {
+        display: flex;
+        flex-direction: column;
+    }
 }
