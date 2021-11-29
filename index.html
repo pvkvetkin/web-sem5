@@ -8,9 +8,20 @@
     <meta name="description" content="Сайт-портфолио, Кветкин Павел, M33041">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/main.js"></script>
 </head>
 
 <body>
+    <script>
+        const current = 0;
+        for (var i = 0; i < document.links.length; i++) {
+            document.write(document.links[i].href + " 123 " + document.URL)
+            if (document.links[i].href === document.URL) {
+                current = i;
+            }
+        }
+        document.links[current].className = 'current';
+    </script>
     <header>
         <nav class="headerLi">
             <a href="#About">Обо мне</a>
@@ -19,8 +30,8 @@
             <a href="#Code">Лучший код</a>
             <a href="#Quote">Любимая цитата</a>
             <a href="#Contacts">Контакты</a>
+            <a href="new_page.html">NEW PAGE</a>
         </nav>
-        <h1> Портфолио Кветкин Павел</h1>
     </header>
     <main>
         <section id="About">
@@ -84,10 +95,10 @@
                 ____________________1¶¶¶¶¶¶¶¶¶1___________________
             </pre>
             <div class="images_collection">
-                <img src="img/fox1.jfif" alt="" width="250"> 
-                <img src="img/fox2.jfif" alt="" width="250"> 
-                <img src="img/fox3.jfif" alt="" width="250"> 
-                <img src="img/fox4.jpg" alt="" width="250"> 
+                <img src="img/fox1.jfif" alt="" width="200"> 
+                <img src="img/fox2.jfif" alt="" width="200"> 
+                <img src="img/fox3.jfif" alt="" width="200"> 
+                <img src="img/fox4.jpg" alt="" width="200"> 
             </div>
         </section>
         <section id="Code">
@@ -166,6 +177,12 @@
     <footer>
         <p>
             &copy 2021 Kvetkin Pavel
+        </p>
+        <script>
+            window.addEventListener("load", () => document.getElementById("timerOnLoad").innerText = "Loading time is: " + timeOnLoad + " seconds")
+        </script>
+        <p id="timerOnLoad">
+            Loading time is:
         </p>
     </footer>
 </body>

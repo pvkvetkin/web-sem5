@@ -1,10 +1,15 @@
 * {
-    margin: 0;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 /* main h2 {
     position: absolute;
 } */
+
+main {
+    margin-top: 5%;
+}
 
 header a { 
     text-decoration: none;
@@ -19,22 +24,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 900px) {
-    
-    body {
-        background-color: bisque;
-    }
-
-    footer {
-        display: none;
-        visibility: hidden;
-    }
-    /* .prop { 
-        display: grid;
-        height: 100px;
-    } */
-}
-
 .tbl {
     border-collapse: collapse;
     width: 1000px;
@@ -47,17 +36,19 @@ body {
 }
 
 h1 {
+    display: flex;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
     line-height: 30px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 section, footer {
-    margin-left: 3%;
-    margin-right: 3%;
+    /* margin-left: 3%;
+    margin-right: 3%; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -76,8 +67,8 @@ section h2 {
 }
 
 footer {
-    margin-top: 3%;
-    margin-left: 3%;
+    /* margin-top: 3%;
+    margin-left: 3%; */
 }
 
 .caseimg {
@@ -91,12 +82,12 @@ footer {
 .about {
     display: flex;
     justify-content: space-between;
+    /* margin-top: 150px; */
     /* justify-content: space-between; */
 }
 
 .abouth {
     display: flex;
-    margin-left: 3%;
 }
 
 
@@ -118,28 +109,34 @@ footer {
 }
 
 .headerLi {
-    width: 100%;
-    margin-bottom: 3%;
+    
+    width: 80%;
+    /* margin-bottom: 3%; */
     background-color: rgb(219, 219, 219);
     display: flex;
     flex-direction: row;
     
     text-align: center;
-    margin-left: 1%;
-    margin-right: 1%;
+    /* margin-left: 1%;
+    margin-right: 1%; */
     /* justify-content: space-between; */
     /* flex-direction: row; */
-    padding: 10px 0;
+    /* padding: 5px 0; */
     outline-color: red;
+    position: fixed;
+    top: 0;
+    /* margin-bottom: 500px; */
 }
+
+/* h1 {
+    margin-top: 50px;
+} */
 
 .headerLi a {
     width: 50%;
     display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
     justify-content: space-around;
-    font-size: 150%;
+    font-size: 110%;
 }
 
 footer {
@@ -168,8 +165,47 @@ footer {
 }
 
 .images_collection {
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
 }
+
+
+.headerLi a:active {
+    color:rgb(46, 84, 155);
+    background-color: #3f37b4;
+}
+
+.current {
+	color: #df3e23;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    
+    body {
+        background-color: bisque;
+    }
+
+    main {
+        margin-top: 15%;
+    }
+
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    /* .prop { 
+        display: grid;
+        height: 100px;
+    } */
+
+    .images_collection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
