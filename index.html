@@ -8,26 +8,38 @@
     <meta name="description" content="Сайт-портфолио, Кветкин Павел, M33041">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/main.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Кветкин Павел M33041</h1>
-        <nav><a href="#About">Обо мне</a> | <a href="#Skills">Мои навыки</a> |
-            <a href="#Animal">Тотемное животное</a> | <a href="#Code">Лучший код</a> |
-            <a href="#Quote">Любимая цитата</a> | <a href="#Contacts">Контакты</a>
-        </nav>
+        <div class="headerLi">
+        <!-- <dive id="headerId"> -->
+            <a class="btn" href="#About">Обо мне</a>
+            <a class="btn" href="#Skills">Мои навыки</a>
+            <a class="btn" href="#Animal">Тотемное животное</a>
+            <a class="btn" href="#Code">Лучший код</a>
+            <a class="btn" href="#Quote">Любимая цитата</a>
+            <a class="btn" href="#Contacts">Контакты</a>
+            <a class="btn" href="new_page.html">NEW PAGE</a>
+            <a class="btn" href="form.html">Form</a>
+            <a class="btn" href="some_users.html">Some users</a>
+        </div>
     </header>
+
     <main>
-        <section id="About" class="casetext">
+        <section id="About">
             <h2>Обо мне</h2>
-            <img class="imgfromleft" src="img/leo.jpeg" alt="" width="150">    
-            <p class="textfromleft"></p>Учусь на 3 курсе в университете ИТМО, люблю <strong>HTML</strong> и <strong>CSS</strong> и всё, что с
-                ними связано. Люблю смотреть фильмы, и на фотографии Лео. Кстати, на YouTube-канале стримингового сервиса Netflix опубликовали трейлер комедийного фильма "Не смотри вверх" с Леонардо Ди Каприо и Дженнифер Лоуренс в главных ролях.
-                Аспирантка Кейт Дибиаски (Лоуренс) и ее профессор по астрономии, доктор Рэндалл Минди (Ди Каприо) обнаруживают комету, которая летит к Земле. Но им никто не верит. Чтобы спасти человечество, дуэт ученых отправляется в тур, чтобы предупредить остальных о катастрофе.
-            </p>
+            <div  class="about">
+                <img class="imgfromleft" src="img/leo.jpeg" alt="" width="150">    
+                <p class="textfromleft">
+                Учусь на 3 курсе в университете ИТМО, люблю <strong>HTML</strong> и <strong>CSS</strong> и всё, что с
+                ними связано. Люблю смотреть фильмы, и на фотографии Лео. Кстати, впервые же на большом киноэкране Леонардо ДиКаприо появился в 1991 году в ленте «Зубастики-3», изображая мальчишку-подростка. В 1993 году исполнил главную роль Тоби в фильме "Жизнь этого парня", по признанию критиков юный ДиКаприо обыграл самого Роберта Де Ниро, исполнившего роль жестокого отчима Тоби. Неожиданностью для многих стало выдвижение 19-летнего ДиКаприо на «Оскара» за роль второго плана в фильме «Что гложет Гилберта Грейпа». Он блестяще сыграл подростка, замкнувшегося в себе после смерти отца. Для того, чтобы создать точный образ психически нездорового мальчика, Ди Каприо несколько недель наблюдал за душевнобольными в спецлечебнице.
+                В последующих фильмах Леонардо ДиКаприо варьирует подобный тип молодого человека — подростка, вступающего во взрослый мир, неведомый и даже враждебный ему. Его персонажи, не находя понимания окружающих, либо угнетены и подавлены, либо ведут себя вызывающе. Таков Джим Кэррол, талантливый баскетболист, пристрастившийся к наркотикам, в «Баскетбольных заметках» или 17-летний Хэнк, страдающий от отсутствия отца и бессердечности матери, в фильме «Комната Марвина». 
+                </p>
+            </div>
         </section>
-        <section id="Skills" class="case">
+        <section id="Skills">
             <h2>Мои навыки</h2>
             <ul>
                 <li>
@@ -76,6 +88,12 @@
                 _________________1¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1____________
                 ____________________1¶¶¶¶¶¶¶¶¶1___________________
             </pre>
+            <div class="images_collection">
+                <img src="img/fox1.jfif" alt="" width="200"> 
+                <img src="img/fox2.jfif" alt="" width="200"> 
+                <img src="img/fox3.jfif" alt="" width="200"> 
+                <img src="img/fox4.jpg" alt="" width="200"> 
+            </div>
         </section>
         <section id="Code">
             <h2>Лучший код</h2>
@@ -95,15 +113,46 @@
                             mov ah,4ch
                             int 21h
                         END START
+
                     </code>
                 </pre>
         </section>
-    <section id="Quote">
+    <section id="Quote">    
         <h2>Любимая цитата</h2>
-        <p>
-            <q>Время не любит, когда его тратят впустую.</q>
-            - Генри Форд.
-        </p>
+        <div>
+            <img class="imgfromleft" src="img/Henry_Ford.png" alt="" width="150">
+            <p class="textfromleft">
+                <q class="qp">Время не любит, когда его тратят впустую.</q>
+                - Генри Форд.
+            </p>
+        </div>
+    </section>
+    <!-- <section>
+        <table class="tbl">
+            <tr>
+                <th>Что я люблю</th>
+                <th>Как я люблю</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Ну так</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Уже другое дело</td>
+            </tr>
+        </table>
+    </section> -->
+    <section>
+        <h2>Качество любви</h2>
+        <div class="wrapper">
+            <div class="rows"><b>Что я люблю</b></div>
+            <div class="rows"><b>Как я люблю</b></div>
+            <div class="rows">HTML</div>
+            <div class="rows">Ну так</div>
+            <div class="rows">CSS</div>
+            <div class="rows">Уже другое дело</div>
+         </div>
     </section>
     <section id="Contacts">
         <h2>Контакты</h2>
@@ -123,7 +172,14 @@
         <p>
             &copy 2021 Kvetkin Pavel
         </p>
+        <script>
+            window.addEventListener("load", () => document.getElementById("timerOnLoad").innerText = "Loading time is: " + timeOnLoad + " seconds")
+        </script>
+        <p id="timerOnLoad">
+            <!-- Loading time is: -->
+        </p>
     </footer>
+    <script src="scripts/current.js"></script>
 </body>
 
 </html>
