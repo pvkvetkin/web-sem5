@@ -1,11 +1,3 @@
-// window.onload = function () {
-//     document.body.classList.add('loaded_hiding');
-//     window.setTimeout(function () {
-//         document.body.classList.add('loaded');
-//         document.body.classList.remove('loaded_hiding');
-//     }, 500);
-// }
-
 function loadJSON(data) {
     let from;
     let to;
@@ -34,9 +26,7 @@ window.addEventListener('load', function (event) {
             .then(res => res.json())
             .then(data => loadJSON(data))
             .catch((e) => {
-                let out = '';
-                out += '<p> ⚠ Что-то пошло не так</p>';
-                $('#loadName').html(out)
+                let users = '<p> ⚠ Что-то пошло не так</p>';
             });
         document.getElementById('preloader').remove();
     }, 2000)
