@@ -1,28 +1,16 @@
 function loadJSON(data) {
-    let item;
-    if (sessionStorage.getItem('flag') == null || sessionStorage.getItem('flag') == 10) {
-        sessionStorage.setItem('flag', 0);
-        // item = 1
-    } 
-    item = JSON.parse(sessionStorage.getItem('flag')) + 1
-    sessionStorage.setItem('flag', item);
-    console.log(item)
     let responses = '';
-    responses += '<p">ID: ' + data[item].id + '</p>';
-    responses += '<p">Username: ' + data[item].username + '</p>';
-    responses += '<p">Email: : ' + data[item].email + '</p>';
-    // for (let item = from; item < to; item++) {
-    //     responses += '<p">ID: ' + data[item].id + '</p>';
-    //     responses += '<p">Username: ' + data[item].username + '</p>';
-    //     responses += '<p">Email: : ' + data[item].email + '</p>';
-    // }
+    responses += '<p">ID: ' + data.id + '</p>';
+    responses += '<p">Username: ' + data.username + '</p>';
+    responses += '<p">Email: : ' + data.email + '</p>';
     let users = document.getElementById('users');
     users.innerHTML = responses;
 }
 
 window.addEventListener('load', function (event) {
     setTimeout(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        let item = Math.floor(Math.random() * 9);
+        fetch('https://jsonplaceholder.typicode.com/users/' + item)
             .then(res => res.json())
             .then(data => loadJSON(data))
             .catch((e) => {
